@@ -20,9 +20,24 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
+    -- Move current line / block with Alt-j/k a la vscode.
+    ["<A-j>"] = ":m .+1<CR>==",
+    ["<A-k>"] = ":m .-2<CR>==",
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+  },
+  i = {
+    -- Move current line / block with Alt-j/k ala vscode.
+    ["<A-j>"] = "<Esc>:m .+1<CR>==gi",
+    -- Move current line / block with Alt-j/k ala vscode.
+    ["<A-k>"] = "<Esc>:m .-2<CR>==gi",
+  },
+  x = {
+    -- Move current line / block with Alt-j/k ala vscode.
+    ["<A-j>"] = ":m '>+1<CR>gv-gv",
+    ["<A-k>"] = ":m '<-2<CR>gv-gv",
   },
 }
