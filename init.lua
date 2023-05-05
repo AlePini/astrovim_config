@@ -52,6 +52,21 @@ return {
     servers = {
       -- "pyright"
     },
+    config = {
+      pylsp = function()
+        return {
+          settings = {
+            pylsp = {
+              plugins = {
+                pycodestyle = {enabled = false},
+                pyflakes = {enabled = false},
+                pylint = {enabled = false},
+              },
+            },
+          },
+        }
+      end,
+    },
   },
 
   -- Configure require("lazy").setup() options
