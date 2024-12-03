@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- AstroCore provides a central place to modify mappings, vim options, autocommands, and more!
 -- Configuration documentation can be found with `:h astrocore`
@@ -66,8 +66,8 @@ return {
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
 
         -- Move current line / block with Alt-j/k a la vscode.
-        ["<A-j>"] = ":m .+1<CR>==",
-        ["<A-k>"] = ":m .-2<CR>==",
+        ["<A-j>"] = {":m .+1<CR>==", desc = "Move current line / block down"},
+        ["<A-k>"] = {":m .-2<CR>==", desc = "Move current line / block up"},
       },
       t = {
         -- setting a mapping to false will disable it
@@ -75,13 +75,13 @@ return {
       },
       i = {
         -- Move current line / block with Alt-j/k a la vscode.
-        ["<A-j>"] = ":m .+1<CR>==",
-        ["<A-k>"] = ":m .-2<CR>==",
+        ["<A-j>"] = {":m .+1<CR>==", desc = "Move current line / block down"},
+        ["<A-k>"] = {":m .-2<CR>==", desc = "Move current line / block up"},
       },
       x = {
         -- Move current line / block with Alt-j/k a la vscode.
-        ["<A-j>"] = ":m .+1<CR>==",
-        ["<A-k>"] = ":m .-2<CR>==",
+        ["<A-j>"] = {":m .+1<CR>==", desc = "Move current line / block down"},
+        ["<A-k>"] = {":m .-2<CR>==", desc = "Move current line / block up"},
       },
     },
   },
