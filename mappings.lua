@@ -1,3 +1,5 @@
+local utils = require "astronvim.utils"
+
 -- Mapping data with "desc" stored directly by vim.keymap.set().
 --
 -- Please use this mappings table to set keyboard mapping since this is the
@@ -24,6 +26,13 @@ return {
     -- Move current line / block with Alt-j/k a la vscode.
     ["<A-j>"] = ":m .+1<CR>==",
     ["<A-k>"] = ":m .-2<CR>==",
+    ["<leader>gg"] = {
+      function()
+        utils.toggle_term_cmd({
+          cmd = "lazygit",
+          float_opts = { width = math.floor(vim.o.columns * 0.95), height = math.floor(vim.o.lines * 0.9) }
+        })
+      end, desc = "ToggleTerm lazygit" },
   },
   t = {
     -- setting a mapping to false will disable it
