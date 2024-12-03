@@ -7,6 +7,7 @@ return {
     opts = {
       ensure_installed = {
         "lua_ls",
+        "ruff_lsp",
         "pylsp"
       },
     },
@@ -18,7 +19,6 @@ return {
     opts = {
       ensure_installed = {
         "prettierd",
-        "ruff"
       },
     },
   },
