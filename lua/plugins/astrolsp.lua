@@ -53,6 +53,19 @@ return {
           pylint = {enabled = false},
         },
       },
+      pyright = {
+        settings = {
+          pyright = {
+            disableOrganizeImports = true, -- Using Ruff
+          },
+          python = {
+            analysis = {
+              ignore = { '*' }, -- Using Ruff
+              typeCheckingMode = 'off', -- Using mypy
+            },
+          },
+        },
+      }
     },
     -- customize how language servers are attached
     handlers = {
