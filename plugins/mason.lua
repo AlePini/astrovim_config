@@ -7,7 +7,7 @@ return {
     opts = {
       ensure_installed = {
         "lua_ls",
-        "ruff_lsp"
+        "pylsp"
       },
     },
   },
@@ -17,7 +17,8 @@ return {
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
       ensure_installed = {
-        "prettierd"
+        "prettierd",
+        "ruff"
       },
     },
   },
