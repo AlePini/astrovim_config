@@ -70,18 +70,18 @@ return {
         ["<A-k>"] = {":m .-2<CR>==", desc = "Move current line / block up"},
       },
       t = {
-        -- setting a mapping to false will disable it
+        -- settinge a mapping to false will disable it
         -- ["<esc>"] = false,
       },
       i = {
         -- Move current line / block with Alt-j/k a la vscode.
-        ["<A-j>"] = {":m .+1<CR>==", desc = "Move current line / block down"},
-        ["<A-k>"] = {":m .-2<CR>==", desc = "Move current line / block up"},
+        ["<A-j>"] = {"<Esc>:m .+1<CR>==gi", desc = "Move current line / block down"},
+        ["<A-k>"] = {"<Esc>:m .-2<CR>==gi", desc = "Move current line / block up"},
       },
       x = {
         -- Move current line / block with Alt-j/k a la vscode.
-        ["<A-j>"] = {":m .+1<CR>==", desc = "Move current line / block down"},
-        ["<A-k>"] = {":m .-2<CR>==", desc = "Move current line / block up"},
+        ["<A-j>"] = {":m '>+1<CR>gv-gv", desc = "Move current line / block down"},
+        ["<A-k>"] = {":m '<-2<CR>gv-gv", desc = "Move current line / block up"},
       },
     },
   },
