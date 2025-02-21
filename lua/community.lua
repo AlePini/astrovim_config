@@ -10,6 +10,7 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.python-ruff" },
   { import = "astrocommunity.pack.yaml" },
+  { import = "astrocommunity.pack.terraform" },
   -- { import = "astrocommunity.pack.ansible" },
   { import = "astrocommunity.colorscheme.dracula-nvim" },
   -- import/override with your plugins folder
