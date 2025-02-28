@@ -24,7 +24,13 @@ return {
     config = function()
       require("telescope").load_extension("yaml_schema")
     end,
-  }
+  },
+  {
+    "ramilito/kubectl.nvim",
+    config = function()
+      require("kubectl").setup({})
+    end,
+  },
 
   -- == Examples of Overriding Plugins ==
 

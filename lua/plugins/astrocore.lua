@@ -68,6 +68,9 @@ return {
         -- Move current line / block with Alt-j/k a la vscode.
         ["<A-j>"] = {":m .+1<CR>==", desc = "Move current line / block down"},
         ["<A-k>"] = {":m .-2<CR>==", desc = "Move current line / block up"},
+
+        -- { noremap = true, silent = true }
+        ["<Leader>k"] = { function() require("kubectl").toggle({tab=true}) end, desc = "Toggle kubectl buffer"},
       },
       t = {
         -- settinge a mapping to false will disable it
