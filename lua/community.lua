@@ -13,6 +13,8 @@ return {
   { import = "astrocommunity.pack.terraform" },
   { import = "astrocommunity.pack.helm" },
   { import = "astrocommunity.pack.ansible" },
+  { import = "astrocommunity.pack.html-css" },
+  { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.colorscheme.dracula-nvim" },
   -- import/override with your plugins folder
 }
