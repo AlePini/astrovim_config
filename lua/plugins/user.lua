@@ -26,10 +26,6 @@ return {
     end,
   },
   {
-    "ramilito/kubectl.nvim",
-    config = function()
-      require("kubectl").setup({})
-    end,
   },
 
   -- == Examples of Overriding Plugins ==
